@@ -10,7 +10,9 @@ export const todoSlice = createSlice({
     initialState,
     reducers : {
         addTodos : (state,action)=>{
-            state.todos.push(action.payload);
+            if(action.payload.todo.trim()!==""){
+                state.todos.push(action.payload);
+            }
         },
         deleteTodo : (state,action)=>{
             

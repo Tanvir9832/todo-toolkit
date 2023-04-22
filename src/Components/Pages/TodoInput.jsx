@@ -23,7 +23,7 @@ const TodoInput = () => {
   return (
     <form onSubmit={handleTodos} style={df}>
         <MyTextField value={todo} onChange={(e)=>setTodos(e.target.value)}  />
-        <MyButton type='submit' >ADD</MyButton>
+        <MyButton sx={{backgroundColor : "customTheme.superDark"}} type='submit' >ADD</MyButton>
     </form>
   )
 }

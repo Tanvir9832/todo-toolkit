@@ -4,10 +4,12 @@ import TodoInput from './Pages/TodoInput'
 import TodoBody from './Pages/TodoBody'
 const Todo = () => {
   return (
-    <Paper  sx={{width : "100%" , height : "98vh" }}>
+    <Paper  sx={{width : "100%" , height : "98vh" , boxSizing : "border-box" , backgroundColor : "customTheme.superDark" }}>
         <Header />
         <TodoInput />
-        <TodoBody />
+        <div style={{display : "flex" ,overflow : "scroll", marginTop : "50px", scrollBehavior : "auto"}}>
+          <TodoBody />
+        </div>
     </Paper>
   )
 }

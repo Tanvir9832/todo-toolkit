@@ -3,9 +3,9 @@ import { MyTypography } from "../../styles/customComponents";
 
 const Header = () => {
   return (
-    <AppBar color="secondary" position="sticky">
+    <AppBar position="sticky">
 
-        <MyTypography sx={{ textAlign: "center" }}> TODO </MyTypography>
+        <MyTypography sx={{ textAlign: "center" ,color : "customTheme.main" }}> TODO </MyTypography>
 
     </AppBar>
   );

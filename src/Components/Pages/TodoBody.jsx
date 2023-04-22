@@ -11,32 +11,22 @@ const TodoBody = () => {
   }
   const allTodos = useSelector((state) => state.todos.todos);
   return (
-    <Paper
-      style={{
-        width: "100%",
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        marginTop: "50px",
-      }}
-    >
+    <>
       {allTodos.map((todo) => {
         return (
           <Paper
             style={{
               textAlign: "center",
               width: "60%",
-              height: "30px",
+              height: "100px",
               border: "1px solid black",
               borderRadius: "10px",
               margin: "10px",
-              padding: "20px",
+              padding: "50px",
               fontWeight: "bold",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              gap : 1,
             }}
             key={todo.id}
           >
@@ -45,7 +35,7 @@ const TodoBody = () => {
           </Paper>
         );
       })}
-    </Paper>
+    </>
   );
 };
 
